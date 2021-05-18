@@ -9,14 +9,24 @@ up-and-running:
 
 ```
 npm i //or npm install 
-npm run dev
+gatsby develop
+
 ``` 
+
+more plugins: 
+
+```
+npm install [PLUGIN NAME]
+
+``` 
+
 
 build: 
 
 ```
 gatsby build 
 netlify deploy -d . --prod
+
 ```
 
 you may need to [set up the netlify cli](https://www.gatsbyjs.com/docs/recipes/deploying-your-site/#deploying-to-netlify). 
