@@ -1,4 +1,4 @@
-## 📜 catalogue
+📜 catalogue
 
 this is a Gatsby theme for a static site based on lists. lists are interesting, in computer science and outside of computer science. i think in lists a lot. 
 
