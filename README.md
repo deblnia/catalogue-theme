@@ -1,30 +1,23 @@
 ## 📜 catalogue
 
-This is 
+this is a Gatsby theme for a static site based on lists. lists are interesting, in computer science and outside of computer science. i think in lists a lot. 
+
+the idea here is that you'd be able to add a markdown file for a _thing_ (think, like, a [one-line hack](https://github.com/connorrothschild/one-line-hacks) or a [quote catalogue](https://arcana.computer/catalogs/quotes), or [paper summaries](https://deblnia.github.io/speedyscholar/)) and that _thing_ then becomes nicely laid out, fully-searcable, tagged, and accessible on the web. 
 
 
-The following directions are kept from the Gatsby starter: 
+up-and-running: 
 
-1.  **Create a Gatsby site.**
+```
+npm i //or npm install 
+npm run dev
+``` 
 
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
+build: 
 
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
+```
+gatsby build 
+netlify deploy -d . --prod
+```
 
-2.  **Start developing.**
+you may need to [set up the netlify cli](https://www.gatsbyjs.com/docs/recipes/deploying-your-site/#deploying-to-netlify). 
 
-    Navigate into your new site’s directory and start it up.
-
-    ```shell
-    cd my-gatsby-site/
-    npm run develop
-    ```
-
-3.  **Open the code and start customizing!**
-
-    Your site is now running at http://localhost:8000!
-
-    Edit `src/pages/index.js` to see your site update in real-time!
