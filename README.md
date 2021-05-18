@@ -1,4 +1,4 @@
-## 📜 catalogue, a gatsby theme 
+## 📜 catalogue
 
 This is 
 
