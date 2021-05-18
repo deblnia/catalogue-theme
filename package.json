@@ -25,6 +25,7 @@
     "gatsby-plugin-sharp": "^3.5.0",
     "gatsby-plugin-sitemap": "^4.1.0",
     "gatsby-source-filesystem": "^3.5.0",
+    "gatsby-transformer-remark": "^4.2.0",
     "gatsby-transformer-sharp": "^3.5.0",
     "netlify-cms-app": "^2.15.6",
     "react": "^17.0.1",
