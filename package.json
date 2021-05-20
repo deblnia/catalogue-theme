@@ -1,35 +1,37 @@
 {
-  "name": "catalogue-template",
-  "version": "1.0.0",
+  "name": "gatsby-example-using-markdown-pages",
   "private": true,
-  "description": "catalogue-template",
-  "author": "Deblina Mukherjee",
+  "description": "Start your new blog using markdown files",
+  "version": "0.1.0",
+  "author": "@gatsbyjs",
+  "dependencies": {
+    "gatsby": "next",
+    "gatsby-image": "next",
+    "gatsby-plugin-manifest": "next",
+    "gatsby-plugin-offline": "next",
+    "gatsby-plugin-react-helmet": "next",
+    "gatsby-plugin-sharp": "next",
+    "gatsby-source-filesystem": "next",
+    "gatsby-transformer-remark": "next",
+    "gatsby-transformer-sharp": "next",
+    "prop-types": "^15.7.2",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "2.1.1"
+  },
   "keywords": [
     "gatsby"
   ],
+  "license": "MIT",
   "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
     "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write src/**/*.{js,jsx}",
+    "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
-  },
-  "dependencies": {
-    "@mdx-js/mdx": "^1.6.22",
-    "@mdx-js/react": "^1.6.22",
-    "gatsby": "^3.4.1",
-    "gatsby-plugin-image": "^1.5.0",
-    "gatsby-plugin-mdx": "^2.5.0",
-    "gatsby-plugin-netlify-cms": "^5.5.0",
-    "gatsby-plugin-sass": "^4.5.0",
-    "gatsby-plugin-sharp": "^3.5.0",
-    "gatsby-plugin-sitemap": "^4.1.0",
-    "gatsby-source-filesystem": "^3.5.0",
-    "gatsby-transformer-remark": "^4.2.0",
-    "gatsby-transformer-sharp": "^3.5.0",
-    "netlify-cms-app": "^2.15.6",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "sass": "^1.32.13"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   }
 }

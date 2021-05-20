@@ -1,30 +1,39 @@
 module.exports = {
   siteMetadata: {
-    title: "catalogue-template",
+    title: `catalog`,
+    description: `a list`,
+    author: `@gatsbyjs`,
   },
   plugins: [
-    "gatsby-plugin-netlify-cms",
-    "gatsby-plugin-sass",
-    "gatsby-plugin-image",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: `markdown-pages`,
+        path: `${__dirname}/src/markdown-pages`,
       },
-      __key: "images",
     },
+    `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: `images`,
+        path: `${__dirname}/src/images`,
       },
-      __key: "pages",
+    },
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `gatsby-starter-default`,
+        short_name: `starter`,
+        start_url: `/`,
+        background_color: `#663399`,
+        theme_color: `#663399`,
+        display: `minimal-ui`,
+        icon: `src/images/gatsby-icon.png`,
+      },
     },
   ],
-};
+}
