@@ -1,13 +1,32 @@
-# Using Markdown Pages
+📜 catalogue
 
-Demonstrates how to render Markdown files as pages in your Gatsby application.
+this is a Gatsby theme for a static site based on lists. lists are interesting, in computer science and outside of computer science. i think in lists a lot. 
 
-## Running an example site
+the idea here is that you'd be able to add a markdown file for a _thing_ (think, like, a [one-line hack](https://connorrothschild.github.io/one-line-hacks/) or a [quote catalogue](https://arcana.computer/catalogs/quotes), or [paper summaries](https://deblnia.github.io/speedyscholar/)) and that _thing_ then becomes nicely laid out, fully-searcable, tagged, and on the web. 
 
-1.  Clone the `gatsby` repository `git clone git@github.com:gatsbyjs/gatsby.git`
-2.  Navigate to the example `cd gatsby/examples/using-markdown-pages`
-3.  Install the dependencies for the application by running `yarn`
-4.  Run the Gatsby development server `gatsby develop`
+
+up-and-running: 
+
+```
+npm i //or npm install 
+gatsby develop
+``` 
+
+more plugins: 
+
+```
+npm install [PLUGIN NAME]
+``` 
+
+
+build: 
+
+```
+gatsby build 
+netlify deploy -d . --prod
+```
+
+you may need to [set up the netlify cli](https://www.gatsbyjs.com/docs/recipes/deploying-your-site/#deploying-to-netlify).
 
 ## References
 
